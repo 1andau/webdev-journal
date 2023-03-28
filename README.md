@@ -16,4 +16,4 @@ Backend:
 - PostgreSQL
 - JWT / PassportJS
 
-![]https://github.com/1andau/webdev-journal/blob/master/screen.png
+![](https://github.com/1andau/webdev-journal/blob/master/screen.png)
