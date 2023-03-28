@@ -1,27 +1,31 @@
 import React from 'react';
 import styles from './Post.module.scss';
 import { Paper, Typography } from '@mui/material';
- const Post = () => {
+const Post = () => {
   return (
     <div>
       <Paper elevation={0} className="p-20">
-        <Typography variant="h5" className={styles.title}>
-          Котик - это лучший друг девушки, он всегда поймет, он никогда не поднимет руку, он не
-          причинит боль.
+        <Typography variant="h1" className={styles.title}>
+         Eminem - Stan
         </Typography>
-        <Typography className="mt-15 mb-15">
-          Котик очень долго стеснялся сказать, что он кот. Поэтому первое время прятался под
-          кроватью. А когда все-таки выходил, то начинал громко и раскатисто мяукать, пугая своих
-          хозяев. Теперь, если хозяева что-то прячут, он выходит из-под кровати и начинает громко
-          мяукать им на ухо. Если надо - орет до тех пор, пока ничего не найдут. Но в конце концов
-          все равно прячут.
+        <Typography className={styles.postsBlock}>
+          My tea's gone cold, I'm wondering why I Got out of bed at all The morning rain clouds up
+          my window And I can't see at all And even if I could it'll all be gray But your picture on
+          my wall It reminds me, that it's not so bad It's not so bad My tea's gone cold, I'm
+          wondering why I Got out of bed at all The morning rain clouds up my window (window) And I
+          can't see at all And even if I could it'll all be gray But your picture on my wall It
+          reminds me, that it's not so bad It's not so bad Dear Slim, I wrote you but you still
+          ain't callin' I left my cell, my pager, and my home phone at the bottom I sent two letters
+          back in autumn, you must not've got 'em There probably was a problem at the post office or
+          somethin' Sometimes I scribble addresses too sloppy when I jot 'em But anyways, fuck it,
+          what's been up, man? How's your daughter? My girlfriend's pregnant too, I'm 'bout to be a
         </Typography>
-        <img
-          src="https://sun9-39.userapi.com/impg/VaB2ecchKb5WrCuHBoMS8CVXZQdVNgaYDis-Hg/yeeX4YN7XEI.jpg?size=960x1280&quality=96&sign=f3021719e3b393935c18087f154e0cca&type=album"
+        <a className={styles.a} href=""> read more</a>
+
+        <img className={styles.image} src='https://www.socialketchup.in/wp-content/uploads/2018/09/killshot.jpg' />
         
-        />
       </Paper>
     </div>
   );
 };
-export default Post
+export default Post;
