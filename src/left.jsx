@@ -15,13 +15,14 @@ const Left = () => {
       <ul>
         <li>
           <Button>
-            <LocalFireDepartmentIcon />
+            <LocalFireDepartmentIcon  />
             Лента
           </Button>
         </li>
         <li>
           <Button>
             <MessageIcon />
+            <a href=""></a>
             Сообщения
           </Button>
         </li>
