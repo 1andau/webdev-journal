@@ -2,28 +2,39 @@ import './App.css';
 import Header from './header/header';
 import Left from './left';
 import Post from './Post/index'
+import Message from './messages/Message';
+import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-
+<>
 <Header/>
 <div className='wrapper'>
-<div className='leftSide'>
-  <Left/>
-  </div>
+<div className='leftSide'> 
+
+<Routes>
+<Route path="" element={<Left />}> </Route>
+</Routes>
+
 </div>
-<div className="content">
-  <Post/>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-        </div>
-  <div className='rightSide'>
-  <Left/>
-  </div>
-    </div>
+ <div className="content"> 
+
+<Post/>
+<Post/>
+<Post/>
+</div>
+</div>
+
+</>
+
+
+
+
   );
 }
 
 export default App;
+
+
+
+
+

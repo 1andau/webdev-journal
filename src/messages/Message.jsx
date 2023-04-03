@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material'
-import CircularProgress from '@mui/material'
-import { Editor } from 'react-draft-wysiwyg'
+// import CircularProgress from '@mui/material'
+// import { Editor } from 'react-draft-wysiwyg'
 import SendIcon from '@mui/icons-material/Send';
 const Message = () => {
 
@@ -10,7 +10,7 @@ const Message = () => {
   <div className='buttonsPanel'>
   <Button variant="contained" color="secondary" className="back">Назад</Button>
   </div>
-  <CircularProgress color="primary" className="loader" />
+  {/* <CircularProgress color="primary" className="loader" /> */}
 
   <div className='container'>
   <div  className="messagesContainer">
@@ -36,11 +36,11 @@ const Message = () => {
 </div>
 </div>
 <div className="wysiwygContainer">
-<Editor
+{/* <Editor
 toolbarClassName="wysiwygToolbar"
 wrapperClassName="wysiwygWrapper"
 editorClassName="wysiwyEditor"
-/>
+/> */}
 
 <SendIcon className="send">отправить</SendIcon>
 </div>

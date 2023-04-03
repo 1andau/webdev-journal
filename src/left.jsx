@@ -5,7 +5,7 @@ import MessageIcon from '@mui/icons-material/Sms';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import styles from './LeftMenu.module.scss';
-
+import Message from './messages/Message';
 
 const Left = () => {
 
@@ -22,7 +22,7 @@ const Left = () => {
         <li>
           <Button>
             <MessageIcon />
-            <a href=""></a>
+            <a href=''></a>
             Сообщения
           </Button>
         </li>
