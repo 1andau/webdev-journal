@@ -16,4 +16,17 @@ Backend:
 - PostgreSQL
 - JWT / PassportJS
 
+
+functional:
+- Authorization
+- Comments
+- Likes
+- Rating
+- Subscriptions
+- Post writing
+- Post feed
+- Notifications
+- Messages
 ![](https://github.com/1andau/webdev-journal/blob/master/screen.png)
+
+

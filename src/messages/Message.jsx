@@ -3,18 +3,36 @@ import { Button } from '@mui/material'
 // import CircularProgress from '@mui/material'
 // import { Editor } from 'react-draft-wysiwyg'
 import SendIcon from '@mui/icons-material/Send';
+import './message.scss'
+import { useNavigate } from 'react-router-dom';
+import { useRef } from 'react';
+
+
+
+
 const Message = () => {
 
+const navigate = useNavigate(); 
+const ref_msgContainer = useRef(null);
+
+const goBack = () => {
+    navigate('/posts')
+}
   return (
     <div className='ChatPage'>
   <div className='buttonsPanel'>
-  <Button variant="contained" color="secondary" className="back">Назад</Button>
+  <Button variant="contained" color="secondary" className="back" onClick={goBack}>Назад</Button>
   </div>
   {/* <CircularProgress color="primary" className="loader" /> */}
-
+  <div className="header">
+                <div className="title">Sarah Landau</div>
+                <div className="description">friend 1</div>
+            </div>
   <div className='container'>
-  <div  className="messagesContainer">
-<h3>Сара</h3>
+  <div ref={ref_msgContainer}  className="messagesContainer">
+
+
+{/* <h3>Сара</h3>
 <p>привет мир</p>
 <p>Отправка...</p>
 
@@ -33,15 +51,15 @@ const Message = () => {
         </div>
         <div className="avatar">?</div>
     </div>
-</div>
+</div> */}
+
+
+return(
+
+)
+
 </div>
 <div className="wysiwygContainer">
-{/* <Editor
-toolbarClassName="wysiwygToolbar"
-wrapperClassName="wysiwygWrapper"
-editorClassName="wysiwyEditor"
-/> */}
-
 <SendIcon className="send">отправить</SendIcon>
 </div>
 

@@ -1,19 +1,18 @@
+@import "../../variables/colors.css";
+@import "../../mixins.scss";
+
 .ChatPage {
     height: 90vh;
     display: flex;
     flex-direction: column;
 
-
-    .editor {
-        text-align: center;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-      }
-      
     .MuiSvgIcon-root{
         cursor: pointer;
+    }
+
+    @include for-mobile {
+        flex: 1;
+        height: auto;
     }
 
     .loader {
@@ -23,43 +22,70 @@
     }
 
     .header {
-        background-color: white;
+        background-color: var(--color-main-white);
         padding: 24px 32px;
         box-sizing: border-box;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid var(--color-main-lightGray);
         margin-top: 26px;
 
+        @include for-mobile {
+            margin-top: 0px;
+        }
 
+        @include for-old-mobile {
+            padding: 10px;
+        }
 
         .title {
             font-weight: 600;
             font-size: 24px;
             line-height: 32px;
 
-    
+            @include for-mobile {
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
 
         .description {
             font-size: 16px;
             line-height: 24px;
-            color: gray; 
-      
+            color: var(--color-main-gray);
+            
+            @include for-mobile {
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
     }
 
     .buttonsPanel {
         height: 40px;
 
-    
+        @include for-mobile {
+            display: none;
+        }
 
         button {
             margin-right: 24px;
             position: relative;
 
+            @include for-mobile {
+                width: 98%;
+                margin-right: 0px;
+            }
+
+            @include for-old-mobile {
+                width: 94%;
+            }
+
             &.back {
                 position: absolute;
                 right: 0;
 
+                @include for-mobile {
+                    display: none;
+                }
             }
         }
     }
@@ -95,14 +121,16 @@
                     border-radius: 8px;
                     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
 
-                
+                    @include for-mobile {
+                        padding: 10px 6px;
+                    }
 
                     &.income {
-                        background-color: orange;
+                        background-color: var(--color-msg-income-bg);
                     }
 
                     &.outcome {
-                        background-color: orange;
+                        background-color: var(--color-msg-outcome-bg);
                     }
 
                     .messageHeader {
@@ -111,6 +139,11 @@
                         gap: 10px;
                         align-items: center;
                         margin-bottom: 10px;
+
+                        @include for-mobile {
+                            gap: 4px;
+                            font-size: 11px;
+                        }
 
                         
 
@@ -121,25 +154,31 @@
                         .dot {
                             width: 4px;
                             height: 4px;
-                            background-color: gray;
+                            background-color: var(--color-main-gray);
                             border-radius: 2px;
 
+                            @include for-mobile {
+                                display: none   ;
+                            }
                         }
 
                         .date {
                             font-size: 14px;
-                            color: gray;
+                            color: var(--color-main-gray);
 
-                       
+                            @include for-mobile {
+                                width: 73px;
+                                font-size: 11px;
+                            }
                         }
                     
 
                         .replay {
-                            color: gray;
+                            color: var(--color-main-gray);
                             cursor: pointer;
 
                             &:hover {
-                                color: red;
+                                color: var(--color-main-text);
                             }
                         }
                     }
@@ -166,13 +205,13 @@
                     border-radius: 25px;
                     
                     &.income {
-                        background-color: red;
+                        background-color: var(--color-avatar1-bg);
                         color: var(--color-main-green);
                         margin-right: 10px;
                     }
 
                     &.outcome {
-                        background-color: red;
+                        background-color: var(--color-avatar2-bg);
                         color: var(--color-main-gold);
                         margin-left: 10px;
                         margin-right: 4px;
@@ -199,7 +238,7 @@
                 flex-direction: column-reverse;
 
                 .wysiwyEditor {
-                    background: white;
+                    background: var(--color-main-white);
                     box-sizing: border-box;
                     padding: 4px 10px;
                     max-height: 124px;
@@ -251,7 +290,7 @@
 
                 &:hover {
                     path {
-                        fill: gold;
+                        fill: var(--color-main-gold);
                     }
                 }
             }

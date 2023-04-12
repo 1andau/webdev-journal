@@ -6,25 +6,31 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import styles from './LeftMenu.module.scss';
 import Message from './messages/Message';
-
+import { Link } from 'react-router-dom';
+import Post from './Post';
 const Left = () => {
 
 
   return (
+    <>
     <div className={styles.menu}>
       <ul>
-        <li>
+      <Link to="/posts">
+      <li>
           <Button>
             <LocalFireDepartmentIcon  />
             Лента
           </Button>
         </li>
+            </Link>
         <li>
+        <Link to='/messages'>
           <Button>
             <MessageIcon />
-            <a href=''></a>
             Сообщения
           </Button>
+          </Link>
+
         </li>
         <li>
           <Button>
@@ -39,7 +45,14 @@ const Left = () => {
           </Button>
         </li>
       </ul>
-    </div>  )
+    </div>     
+    
+
+
+
+    </>
+ 
+    )
 }
 
 export default Left
