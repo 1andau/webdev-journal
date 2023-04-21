@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--primary-font: "Roboto", sans-serif;
+	--secondary-font: "Montserrat", sans-serif;
+}
+
+h1{
+    color: #fff;
+}
+img {
+	vertical-align: top;
+}
+
+/* Create post */
+.create-post {
+	width: 95%;
+	max-width: 860px;
+	margin: 50px auto;
+	display: flex;
+	gap: 20px;
+}
+
+.create-post__avatar {
+	width: 65px;
+	height: 65px;
+	border-radius: 5px;
+}
+
+.create-post__form {
+	background-color: #fff;
+	padding: 20px;
+	width: 100%;
+	position: relative;
+	border-radius: 5px;
+}
+
+.imgContainer{
+    background-color: gray;
+    justify-content: unset;
+
+ .box{
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+    .imagetitle{
+        box-sizing: border-box;
+        font-family: Graphik,serif;
+        font-size: 17px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+ }   
+}
+
+
+.imgContainer{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    color: white;
+    font-family: sans-serif;
+    transition: all .5s;
+    box-shadow: 1px 1px 15px 3px gray;
+    
+    
+
+}
+
+input {
+    display:none;
+  }
+  
+//   label {
+//     width: 50%;
+//     height: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 1rem;
+//     border-radius: 1rem;
+//     background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+//     color: white;
+//     font-family: sans-serif;
+//     transition: all .5s;
+//     box-shadow: 1px 1px 15px 3px gray;
+//   }
+  
+  label:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  :root {
+    height:100%;
+  }
+
+.create-post__form::after {
+	content: " ";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -19px;
+	right: auto;
+	top: 20px;
+	bottom: auto;
+	border: 10px solid;
+	border-color: transparent;
+	border-right-color: #fff;
+}
+
+/* Dynamic height for text-area:
+https://css-tricks.com/the-cleanest-trick-for-autogrowing-textareas/ */
+
+.createPostMain {
+	display: grid;
+	margin-bottom: 20px;
+    :after {
+        content: attr(data-replicated-value) " ";
+        white-space: pre-wrap;
+        visibility: hidden;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: 20px;
+    }  
+    
+    textarea {
+	min-height: 70px;
+	font-size: 16px;
+	color: #000000;
+	resize: none;
+	overflow: hidden;
+    border: 1px rgba(128, 128, 128, 0.191) solid;
+border-radius: 5px;
+}
+}
+
+//text block
+
+
+.createText {
+	display: grid;
+	margin-bottom: 20px;
+
+    label{
+        font-weight: bold;
+        font-size: 20px;
+    } 
+
+    textarea {
+min-height: 200px;
+	font-size: 16px;
+	color: #757a91;
+	resize: none;
+	overflow: hidden;
+border: 1px rgba(128, 128, 128, 0.191) solid;
+border-radius: 5px;
+    
+}
+
+textarea::placeholder{
+    color: #999999;
+  }
+
+
+
+}
+
+
+.createText::after {
+	content: attr(data-replicated-value) " ";
+	white-space: pre-wrap;
+	visibility: hidden;
+}
+
+// .createText > textarea,
+// .createText::after {
+// 	border: none;
+// 	font: inherit;
+// 	grid-area: 1 / 1 / 2 / 2;
+// 	line-height: 1.5;
+// 	word-break: break-all;
+// }
+
+
+.postMedia {
+	margin-bottom: 20px;
+}
+
+.create-post__media-item {
+	width: 100%;
+	max-width: 140px;
+	position: relative;
+}
+
+.create-post__media-item button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: #fff;
+	border: none;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.create-post__media-item img {
+	width: 100%;
+}
+
+.buttons {
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+}
+
+.create-post__assets-buttons {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+#create-post-media {
+	display: none;
+}
+

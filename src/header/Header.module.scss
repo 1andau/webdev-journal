@@ -1,9 +1,10 @@
 .root {
-    position: fixed;
+    // position: fixed;
     display: flex;
-    width: 100%;
-    background-color: #000000 !important;
+    background-color: #00000009 !important;
+    // background-image: url('../assets/bg.jpg');
     align-items: center;
+    margin: 0 230px 30px 230px;
     padding: 0 35px 0 10px;
     height: 60px;
     justify-content: space-between;
@@ -15,6 +16,15 @@
         }}
   }
   
+  .nameLogo{
+    color: #fff;
+    margin-right: 30px;
+    text-align: center;
+
+  }
+  .hhtps{
+    color: gray;
+  }
   .logo {
     width: 52px;
     height: 42px;
