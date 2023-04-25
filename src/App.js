@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Header from './header/header';
 import Left from './left';
 import Post from './Post/index';

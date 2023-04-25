@@ -24,6 +24,12 @@ const navigate = useNavigate()
           className={styles.logo}
           src='https://images.squarespace-cdn.com/content/v1/6302b0eb1ce871273c7debd1/14c3a21f-e8f9-4a4e-b68f-8f4e70d3e32b/Sarah+Johnson+Logo.png'         
         /> */}
+
+
+
+
+
+
         <h4 className={styles.nameLogo}> <span className={styles.hhtps}>: //</span> Landau</h4>
         <div className={styles.searchBlock}>
           <SearchIcon />
@@ -41,23 +47,33 @@ const navigate = useNavigate()
        {/* //message */}
        <Link to='/chat'>
         <IconButton>
+         <div class="notif">
+         <button data-notification-count="1" id="notification-btn">       
           <MessageIcon />
+        </button>
+        </div>       
         </IconButton>
         </Link>
 
         {/* //notification */}
         <Link to='/notifications'>
         <IconButton>
+        <div class="notif">
+         <button data-notification-count="1" id="notification-btn">
           <NotificationsIcon />
+        </button>
+        </div>
+
         </IconButton>
+
          </Link>
          
         {/* //settings */}
-        <Link to='/settings'>
+        {/* <Link to='/settings'>
         <IconButton>
         <Settings />
         </IconButton>
-        </Link>
+        </Link> */}
 
      
       <Link to='/admin'>

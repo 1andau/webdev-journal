@@ -4,19 +4,23 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import MessageIcon from '@mui/icons-material/Sms';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import styles from './LeftMenu.module.scss';
+import  './LeftMenu.scss';
 import { Link } from 'react-router-dom';
 const Left = () => {
 
 
   return (
     <>
-    <div className={styles.menu}>
+    <div className='menu'>
       <ul>
       <Link to="/posts">
       <li>
           <Button>
+          <div class="notificationLeft">
+         <button data-notification-count="1" id="notificationLeft-btn">
             <LocalFireDepartmentIcon  />
+            </button>
+        </div>
             Лента
           </Button>
         </li>
@@ -24,9 +28,15 @@ const Left = () => {
         <li>
         <Link to='/messages'>
           <Button>
+          <div class="notificationLeft">
+         <button data-notification-count="1" id="notificationLeft-btn">
             <MessageIcon />
+            </button>
+        </div>
             Сообщения
+            
           </Button>
+        
           </Link>
 
         </li>

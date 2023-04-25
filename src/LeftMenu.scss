@@ -1,0 +1,75 @@
+.menu {
+  position: fixed;
+  width: 200px;
+  left: 15px;
+  top: 70px;
+  :global {
+    svg {
+
+      color: rgb(59, 59, 59);
+    }}
+
+
+    .notificationLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      place-items: center;
+    }
+    
+    #notificationLeft-btn {
+      all: unset;
+      position: relative;
+  
+    }
+    
+    #notificationLeft-btn::before {
+      /*  main is this attr()  */
+      content: attr(data-notification-count);
+    
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 600;
+      font-size: 9px;
+      border-radius: 999px;
+      background-color: red;
+      top: 0;
+      left: 0;
+    }
+    
+  
+
+
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 2px;
+    button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px;
+      text-transform: inherit;
+      font-size: 16px;
+      font-weight: 400px;
+    }
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+
+
+
