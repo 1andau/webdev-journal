@@ -21,7 +21,7 @@ functional:
 - Authorization
 - Comments
 - Likes
-- Rating
+- tests
 - Subscriptions
 - Post writing
 - Post feed

@@ -9,9 +9,8 @@ import Chat from './chat/Chat';
 import Notifications from './notifications/Notifications';
 import CreatePost from './createPost/CreatePost';
 import Admin from './Admin/Admin';
-import Rating from './rating/Rating';
 import Subscriptions from './Subscriptions/Subscriptions';
-
+import Test from './tests/Test';
 function App() {
   return (
     <div className="App">
@@ -28,7 +27,7 @@ function App() {
             <Route path="/notifications" element={<Notifications />}></Route>
             <Route path="/createPost" element={<CreatePost />}></Route>
             <Route path="/admin" element={<Admin />}></Route>
-            <Route path="/rating" element={<Rating />}></Route>
+            <Route path="/tests" element={<Test />}></Route>
             <Route path="/subscriptions" element={<Subscriptions />}></Route>
 
           </Routes>

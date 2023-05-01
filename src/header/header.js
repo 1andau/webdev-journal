@@ -11,26 +11,24 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Settings } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Notifications from '../notifications/Notifications';
+import { useState, useEffect, useRef } from 'react';
+import Popup from "reactjs-popup";
+
 const Header = () => {
 const navigate = useNavigate()
+const [isOpen, setIsOpen] = useState(false);
+
+
 
   return (
     <Paper classes={{ root: styles.root }} elevation={0}>
       <div className="d-flex align-center">
-        {/* <IconButton >
-          <MenuIcon />
-        </IconButton> */}
-        {/* <img
-          className={styles.logo}
-          src='https://images.squarespace-cdn.com/content/v1/6302b0eb1ce871273c7debd1/14c3a21f-e8f9-4a4e-b68f-8f4e70d3e32b/Sarah+Johnson+Logo.png'         
-        /> */}
+  
 
-
-
-
-
-
-        <h4 className={styles.nameLogo}> <span className={styles.hhtps}>: //</span> Landau</h4>
+  <Link to="/posts">
+  <h4 className={styles.nameLogo}> <span className={styles.hhtps}>: //</span> Landau</h4>
+  </Link>
         <div className={styles.searchBlock}>
           <SearchIcon />
           <input type="text" placeholder="Поиск" />
@@ -56,24 +54,29 @@ const navigate = useNavigate()
         </Link>
 
         {/* //notification */}
-        <Link to='/notifications'>
+        {/* <Link to='/notifications'> */}
         <IconButton>
         <div class="notif">
          <button data-notification-count="1" id="notification-btn">
-          <NotificationsIcon />
+          <NotificationsIcon onClick={() => setIsOpen(true)} />
+          <Popup
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          closeOnDocumentClick
+       
+        >
+          <div className="notification">
+            <Notifications/>
+            <button className='closeBtn' onClick={() => setIsOpen(false)}>Close</button> 
+          </div>
+        </Popup>
+
+
         </button>
         </div>
-
         </IconButton>
 
-         </Link>
-         
-        {/* //settings */}
-        {/* <Link to='/settings'>
-        <IconButton>
-        <Settings />
-        </IconButton>
-        </Link> */}
+
 
      
       <Link to='/admin'>

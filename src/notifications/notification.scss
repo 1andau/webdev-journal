@@ -1,0 +1,143 @@
+
+
+.notification {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #F5F8FA;
+    border: 1px solid #E1E8ED;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+  }
+
+  .closeBtn{
+    border-radius: 5px;
+    background-color: #14171A;
+border: none;
+color: white;
+font-weight: 700;
+
+  }
+
+.box{
+    height: 100px;
+    width: 100%;
+
+}
+
+  .avatar img{
+    width: 48px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+  }
+  .content {
+    flex: 1;
+  }
+  .header {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .name {
+    font-weight: bold;
+    color: #14171A;
+    text-decoration: none;
+  }
+  .name:hover {
+    text-decoration: underline;
+  }
+  .time {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #657786;
+  }
+  .message {
+    font-size: 14px;
+    color: #14171A;
+  }
+  
+
+
+
+
+// .popup-notification {
+//     background-color: #fff;
+//     border-radius: 4px;
+//     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+//     padding: 16px;
+//     font-size: 14px;
+//     max-width: 500px;
+
+// }
+
+// .notificationContainer{
+// //  display: flex;
+// //     justify-content: center;
+// display: inline-block;
+//      text-align: center;
+
+// }
+
+// .notification__avatar{
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+
+//     // margin: 20px;
+// }
+
+// .notification__header {
+//       font-weight: bold;
+//       text-align: center;
+//       margin-bottom: 16px;
+//     }
+
+
+  
+// //     &__list {
+// //       list-style: none;
+// //       padding: 0;
+  
+// //       &__item {
+// //         display: flex;
+// //         align-items: center;
+// //         margin-bottom: 16px;
+  
+// //         &__text-container {
+// //           display: flex;
+// //           align-items: center;
+  
+// //         .notification__avatar {
+// //             width: 40px;
+// //             height: 40px;
+// //             border-radius: 50%;
+// //             // margin-right: 12px;
+// //             // background-image: url(https://img5tv.cdnvideo.ru/shared/files/202209/1_1589674.jpg);
+// //             // background-size: cover;
+// //             // background-position: center;
+// //             display: inline-block;
+// //           }
+  
+// //           &__text {
+// //             flex-grow: 1;
+// //             max-width: calc(100% - 52px);
+// //             overflow: hidden;
+  
+// //             strong {
+// //               margin-right: 8px;
+// //             }
+  
+// //             &__time {
+// //               color: #8e8e8e;
+// //             }
+// //           }
+// //         }
+// //       }
+// //     }
+// //   }
+  

@@ -1,0 +1,43 @@
+.containerTest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    .itemTest {
+      width: calc((100% / 2) - 10px); /* Размер элемента для 3 блоков в строке */
+      margin-bottom: 10px;
+      margin-right: 10px;
+      
+      .imageTest {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        
+        .testImage {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      
+      .contentTest {
+        padding: 10px;
+        
+        .titleTest {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: white;
+        }
+        
+        .textTest {
+          font-size: 16px;
+          color: white;
+
+        }
+      }
+    }
+  }
+  

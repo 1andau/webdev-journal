@@ -2,10 +2,11 @@ import React from 'react'
 import { Button } from '@mui/material';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import MessageIcon from '@mui/icons-material/Sms';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import  './LeftMenu.scss';
 import { Link } from 'react-router-dom';
+import QuizIcon from '@mui/icons-material/Quiz';
+
 const Left = () => {
 
 
@@ -41,10 +42,10 @@ const Left = () => {
 
         </li>
         <li>
-        <Link to='/rating'>
+        <Link to='/tests'>
           <Button>
-            <TrendingUpIcon />
-            Рейтинг
+            <QuizIcon />
+            Тесты
           </Button>
           </Link>
 
