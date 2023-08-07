@@ -6,17 +6,12 @@ import CreateIcon from '@mui/icons-material/Create';
 import MessageIcon from '@mui/icons-material/Sms';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Avatar from '@mui/material/Avatar';
-import MenuIcon from '@mui/icons-material/Menu';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Settings } from '@mui/icons-material';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Notifications from '../notifications/Notifications';
 import { useState, useEffect, useRef } from 'react';
 import Popup from "reactjs-popup";
 
 const Header = () => {
-const navigate = useNavigate()
 const [isOpen, setIsOpen] = useState(false);
 
 

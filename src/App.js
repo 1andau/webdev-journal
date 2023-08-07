@@ -10,7 +10,7 @@ import Notifications from './notifications/Notifications';
 import CreatePost from './createPost/CreatePost';
 import Admin from './Admin/Admin';
 import Subscriptions from './Subscriptions/Subscriptions';
-import Test from './tests/Test';
+import Test from './tests/pagination';
 function App() {
   return (
     <div className="App">
